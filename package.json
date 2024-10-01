@@ -4,7 +4,8 @@
   "scripts": {
     "start": "concurrently \"npm run start-client\" \"npm run start-server\"",
     "start-client": "cd client && npm start",
-    "start-server": "cd server && npm start"
+    "start-server": "cd server && npm start",
+    "postinstall": "npm install concurrently"
   },
   "dependencies": {
     "concurrently": "^9.0.1"
